@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body onload="generateCaptcha();">
+    <h2>CAPTCHA</h2>
+    <p>
+      A <em>CAPTCHA</em> is a type of challenge–response test used in computing
+      to determine whether the user is human in order to deter bot attacks and
+      spam.
+    </p>
+    <h3>Advantages of CAPTCHAs include:</h3>
+    <ul>
+      <li>
+        They prevent spam from automated programs that could send emails,
+        comments or advertisements.
+      </li>
+      <li>They prevent fake registrations or sign-ups for websites.</li>
+      <li>
+        CAPTCHAs are familiar, so website visitors automatically understand what
+        they are tasked to do.
+      </li>
+      <li>CAPTCHAs are also easy to implement in building a website.</li>
+    </ul>
+    <h3>Disadvantages of CAPTCHAs include:</h3>
+    <ul>
+      <li>CAPTCHAs are not foolproof and can only limit spam.</li>
+      <li>They can be time consuming or annoying to end users.</li>
+      <li>To some people, CAPTCHAs may be challenging to read.</li>
+      <li>
+        Websites using CAPTCHAs may notice traffic decreases because users find
+        the tasks difficult.
+      </li>
+    </ul>
+    <div class="div1">
+      <h1>Enter the Captcha Code for form Validation.</h1>
+      <input type="text" id="mainCaptcha" readonly="readonly" />
+      <input
+        type="button"
+        id="refresh"
+        value="Refresh"
+        onclick="generateCaptcha();"
+      />
+      <br /><br />
+      <input type="text" id="txtinput" /> <br />
+      <input
+        type="button"
+        id="Button1"
+        value="Check"
+        onclick="CheckValidCaptcha();"
+      />
+      <span id="error" style="color: rgb(218, 215, 215)"></span>
+      <span id="success" style="color: green"></span>
+    </div>
+  </body>
+</html>
